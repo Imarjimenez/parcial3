@@ -21,7 +21,7 @@ class Planetas : public QObject, public QGraphicsItem
 public:
 
     Planetas();
-    Planetas(int r_, int x, int y,int vel_i,int vel_f,int masa);
+    Planetas(int r_, int x, int y,int vel_i,int vel_f,double masa);
     float t;
 
     void F_Atraccion(double _Posx2,double _Posy2,double _Masa2);
