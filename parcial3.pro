@@ -26,10 +26,12 @@ CONFIG += c++11
 
 SOURCES += \
         main.cpp \
-        mainwindow.cpp
+        mainwindow.cpp \
+        planetas.cpp
 
 HEADERS += \
-        mainwindow.h
+        mainwindow.h \
+        planetas.h
 
 FORMS += \
         mainwindow.ui

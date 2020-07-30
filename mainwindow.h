@@ -2,7 +2,10 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
+#include <QGraphicsScene>
+#include <QTimer>
+#include <QFile>
+#include "planetas.h"
 namespace Ui {
 class MainWindow;
 }
@@ -17,6 +20,10 @@ public:
 
 private:
     Ui::MainWindow *ui;
+    QGraphicsScene *scene;
+    QList<Planetas *> planetas;
+
+    void keyPressEvent(QKeyEvent *event);
 };
 
 #endif // MAINWINDOW_H
